@@ -1,0 +1,190 @@
+:root{
+    --vermelho: #f53c04;
+    --preto: #fddb01;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Elementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+}
+header .container .logo_nome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #212020;
+    margin-right: 30px;
+}
+
+header nav a:hover{
+    color: #ffff;
+}
+
+/*filme principal*/
+
+.filme_principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/img/foto_principal.png");
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme_principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme_principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: 3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botao a{
+    text-decoration: none;
+    color: #f8f8f8;
+    margin-right: 30px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme_principal .container{
+    width: 70%;
+}
+
+.box_filme{
+    height: 25%;
+    width: 25%;
+    display: block;
+}
+
+.carrosel_filmes{
+    margin-top: 10px;
+}
+
+.principalInfos{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%), url("/img/FilhosPrincipal.png");
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.principalInfos .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.principalInfos .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.redesSocs{
+    font-size: 16px;
+    background-color: #fefafa;
+
+    height: 300px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redesSocs .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.redesSocs .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.redesSocs .container{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redesSocs img{
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+.redesSocs h3{
+    color: #212020;
+    margin-bottom: 25px;
+}
